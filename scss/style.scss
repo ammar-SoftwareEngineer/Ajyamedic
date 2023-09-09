@@ -1,0 +1,32 @@
+$primary: #cdb687;
+$secondary: #29eafd;
+$blue: #17232f;
+$font-family-sans-serif: "Almarai", sans-serif;
+$font-family-sans-serif-secondary: "Cairo", sans-serif;
+body {
+  position: relative;
+  &::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* opacity: 100%; */
+    background-image: url(../images/background/background.jpg);
+    background-repeat: no-repeat;
+    background-position: 75% 0;
+    background-size: cover;
+  }
+}
+
+@import "bootstrap/mixins";
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/bootstrap";
+
+@import "components/site-base";
+@import "components/site-navbar";
+@import "components/site-blocks";
+@import "components/site-footer";
